@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<div class="toBePlaced">
+	<div class="row" *ngFor="#entryArr of gridPlaced.elements" [style.height]="cellHeight + 'px'">
+		<div class="cell" *ngFor="#entry of entryArr" [style.width]="cellWidth + 'px'" [style.height]="cellHeight + 'px'">
+			
+		</div>
+	</div>
+</div>
+<div class="placed">
+<div class="row" *ngFor="#entryArr of gridPlaced.elements" [style.height]="cellHeight + 'px'">
+	<div class="cell" *ngFor="#entry of entryArr" [style.width]="cellWidth + 'px'" [style.height]="cellHeight + 'px'">
+		
+	</div>
+</div>
+</div>
